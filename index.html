@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhavya Khandelwal | Portfolio</title>
+  <meta name="description" content="Personal portfolio of Bhavya Khandelwal - First-Year Computer Science Engineering Student at JECRC University, Jaipur and Aspiring AI/ML Engineer.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient background glow elements -->
+  <div class="bg-glow glow-1" aria-hidden="true"></div>
+  <div class="bg-glow glow-2" aria-hidden="true"></div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <a href="#home" class="logo" aria-label="Bhavya Khandelwal Portfolio">
+        <span class="logo-mark">&lt;BK /&gt;</span>
+        <span class="logo-text">Bhavya Khandelwal</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#activities" class="nav-link">Activities</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- CTA Button (Desktop) -->
+      <div class="header-cta">
+        <a href="#contact" class="btn btn-sm btn-outline">Let's Connect</a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+      <ul class="mobile-nav-links">
+        <li><a href="#home" class="mobile-nav-link">Home</a></li>
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#education" class="mobile-nav-link">Education</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#activities" class="mobile-nav-link">Activities</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-nav-footer">
+        <a href="#contact" class="btn btn-primary btn-block">Get in Touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Section 1: Hero -->
+    <section class="hero-section" id="home">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge-status">
+            <span class="pulse-dot"></span>
+            <span>First-Year CSE Student • Aspiring AI/ML Engineer</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Bhavya Khandelwal</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Computer Science Engineering Student | Aspiring AI/ML Engineer
+          </p>
+
+          <p class="hero-description">
+            I am a first-year undergraduate at JECRC University, Jaipur, building strong programming fundamentals in Java and Data Structures &amp; Algorithms while exploring the frontiers of Artificial Intelligence and practical problem-solving.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              <span>View My Projects</span>
+              <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Contact Me</span>
+              <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Quick facts ribbon -->
+          <div class="hero-quick-facts">
+            <div class="quick-fact-item">
+              <span class="fact-label">University</span>
+              <span class="fact-value">JECRC University</span>
+            </div>
+            <div class="quick-fact-divider"></div>
+            <div class="quick-fact-item">
+              <span class="fact-label">Location</span>
+              <span class="fact-value">Jaipur, Rajasthan</span>
+            </div>
+            <div class="quick-fact-divider"></div>
+            <div class="quick-fact-item">
+              <span class="fact-label">Focus</span>
+              <span class="fact-value">Java • DSA • AI/ML</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual / Profile Image Card -->
+        <div class="hero-visual">
+          <div class="profile-card-wrapper">
+            <div class="profile-image-container">
+              <img src="profile.jpg" alt="Bhavya Khandelwal" class="profile-image" loading="eager">
+              <div class="profile-image-glow"></div>
+            </div>
+
+            <!-- Floating Badges -->
+            <div class="floating-pill pill-top">
+              <div class="pill-icon">🎓</div>
+              <div class="pill-content">
+                <span class="pill-title">B.Tech CSE</span>
+                <span class="pill-desc">First Year Undergrad</span>
+              </div>
+            </div>
+
+            <div class="floating-pill pill-bottom">
+              <div class="pill-icon">🤖</div>
+              <div class="pill-content">
+                <span class="pill-title">Future Focus</span>
+                <span class="pill-desc">AI &amp; Machine Learning</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: About Me -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Passionate About Technology &amp; Learning</h2>
+          <p class="section-subtitle">
+            An honest look into my journey as an early-stage engineering student with big aspirations.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-narrative card">
+            <h3 class="about-heading">My Journey &amp; Mindset</h3>
+            <p>
+              I am a first-year Computer Science Engineering student interested in software development, Artificial Intelligence, Machine Learning, and problem solving.
+            </p>
+            <p>
+              Right now, I am focusing on strengthening my core programming fundamentals — writing clean code in Java, understanding Object-Oriented principles, and learning Data Structures and Algorithms. Looking ahead, I plan to expand into Python and delve into AI/ML frameworks to build intelligent software solutions.
+            </p>
+            <p>
+              Alongside core academics, I have a deep curiosity for entrepreneurship, technology, and building practical projects that address genuine real-world challenges.
+            </p>
+
+            <div class="about-highlights-list">
+              <div class="highlight-item">
+                <div class="highlight-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </div>
+                <span>Building foundational logic through Java &amp; DSA</span>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </div>
+                <span>Aspiring to engineer intelligent AI and ML models</span>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </div>
+                <span>Active participant in incubation, ideation &amp; hackathons</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-cards-col">
+            <div class="info-card card">
+              <div class="info-card-icon">📍</div>
+              <div>
+                <h4 class="info-card-title">Location</h4>
+                <p class="info-card-text">Jaipur, Rajasthan, India</p>
+              </div>
+            </div>
+
+            <div class="info-card card">
+              <div class="info-card-icon">🎯</div>
+              <div>
+                <h4 class="info-card-title">Career Goal</h4>
+                <p class="info-card-text">AI / ML Engineer &amp; Software Builder</p>
+              </div>
+            </div>
+
+            <div class="info-card card">
+              <div class="info-card-icon">💡</div>
+              <div>
+                <h4 class="info-card-title">Interests</h4>
+                <p class="info-card-text">Startups, Entrepreneurship &amp; Practical Coding</p>
+              </div>
+            </div>
+
+            <div class="info-card card">
+              <div class="info-card-icon">🤝</div>
+              <div>
+                <h4 class="info-card-title">Key Strengths</h4>
+                <p class="info-card-text">Curiosity, Problem Solving, Communication &amp; Teamwork</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Education -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Education</span>
+          <h2 class="section-title">Academic Background</h2>
+          <p class="section-subtitle">
+            My formal engineering coursework and academic foundation.
+          </p>
+        </div>
+
+        <div class="education-card card">
+          <div class="education-header">
+            <div class="edu-badge-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+            <div class="edu-header-text">
+              <div class="edu-top-row">
+                <h3 class="edu-degree">B.Tech in Computer Science Engineering</h3>
+                <span class="edu-period">2026 – Present</span>
+              </div>
+              <p class="edu-university">JECRC University, Jaipur, Rajasthan</p>
+              <div class="edu-status-badge">First-Year Undergrad</div>
+            </div>
+          </div>
+
+          <div class="edu-body">
+            <h4 class="edu-subheading">Core Areas &amp; Current Focus:</h4>
+            <div class="edu-tags">
+              <span class="tag">Programming Fundamentals</span>
+              <span class="tag">Object-Oriented Programming (Java)</span>
+              <span class="tag">Data Structures &amp; Algorithms</span>
+              <span class="tag">Mathematics for Computing</span>
+              <span class="tag">Digital Literacy &amp; Tools</span>
+              <span class="tag">Problem Solving</span>
+            </div>
+            <p class="edu-note">
+              Engaging actively with the university's technical ecosystem, incubation programs, and hands-on laboratory sessions to develop rigorous conceptual depth.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Skills -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Technical Toolkit</span>
+          <h2 class="section-title">Skills &amp; Learning Journey</h2>
+          <p class="section-subtitle">
+            An honest view of my current proficiencies and what I am actively mastering.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Column 1: Current Skills -->
+          <div class="skill-category-card card">
+            <div class="category-header">
+              <div class="category-icon current-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title">Current Skills</h3>
+                <p class="category-desc">Technologies &amp; tools I have worked with</p>
+              </div>
+            </div>
+
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name">HTML</span>
+                  <span class="skill-badge">Web Fundamentals</span>
+                </div>
+                <div class="skill-pill-desc">Semantic markup, responsive page structure</div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name">CSS</span>
+                  <span class="skill-badge">Styling &amp; Layout</span>
+                </div>
+                <div class="skill-pill-desc">Flexbox, CSS Grid, media queries, animations</div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name">JavaScript (Basics)</span>
+                  <span class="skill-badge">Frontend Logic</span>
+                </div>
+                <div class="skill-pill-desc">DOM manipulation, event listeners, basic functions</div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name">Java (Basics)</span>
+                  <span class="skill-badge">Programming Core</span>
+                </div>
+                <div class="skill-pill-desc">Syntax, data types, control flow, functions</div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name">AI Tools</span>
+                  <span class="skill-badge">Productivity</span>
+                </div>
+                <div class="skill-pill-desc">Leveraging modern AI assistants for research &amp; coding</div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name">Prompt Engineering</span>
+                  <span class="skill-badge">AI Collaboration</span>
+                </div>
+                <div class="skill-pill-desc">Crafting structured prompts for effective problem solving</div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name">Communication</span>
+                  <span class="skill-badge">Interpersonal</span>
+                </div>
+                <div class="skill-pill-desc">Articulating ideas clearly in presentations &amp; discussions</div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-name">Teamwork</span>
+                  <span class="skill-badge">Collaboration</span>
+                </div>
+                <div class="skill-pill-desc">Working harmoniously in group activities &amp; hackathons</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Currently Learning -->
+          <div class="skill-category-card card learning-card">
+            <div class="category-header">
+              <div class="category-icon learning-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title">Currently Learning</h3>
+                <p class="category-desc">Active roadmap and areas of ongoing study</p>
+              </div>
+            </div>
+
+            <div class="skills-list">
+              <div class="skill-item in-progress">
+                <div class="skill-item-info">
+                  <span class="skill-name">Java &amp; OOP</span>
+                  <span class="status-tag learning">In Progress</span>
+                </div>
+                <div class="skill-pill-desc">Deepening Object-Oriented Programming concepts &amp; practice</div>
+              </div>
+
+              <div class="skill-item in-progress">
+                <div class="skill-item-info">
+                  <span class="skill-name">Data Structures &amp; Algorithms</span>
+                  <span class="status-tag learning">In Progress</span>
+                </div>
+                <div class="skill-pill-desc">Arrays, linked lists, recursion, sorting, searching algorithms</div>
+              </div>
+
+              <div class="skill-item in-progress">
+                <div class="skill-item-info">
+                  <span class="skill-name">Python Programming</span>
+                  <span class="status-tag upcoming">Roadmap</span>
+                </div>
+                <div class="skill-pill-desc">Preparing for AI/ML libraries and scientific computing</div>
+              </div>
+
+              <div class="skill-item in-progress">
+                <div class="skill-item-info">
+                  <span class="skill-name">Artificial Intelligence</span>
+                  <span class="status-tag upcoming">Roadmap</span>
+                </div>
+                <div class="skill-pill-desc">Core AI concepts, search heuristics, and problem representation</div>
+              </div>
+
+              <div class="skill-item in-progress">
+                <div class="skill-item-info">
+                  <span class="skill-name">Machine Learning</span>
+                  <span class="status-tag upcoming">Roadmap</span>
+                </div>
+                <div class="skill-pill-desc">Supervised &amp; unsupervised learning theory and workflows</div>
+              </div>
+            </div>
+
+            <!-- Learning mindset quote -->
+            <div class="learning-quote">
+              <div class="quote-icon">🎯</div>
+              <p>
+                "Mastering fundamentals first: building strong algorithmic intuition before jumping into advanced AI models."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Projects -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">My Work</span>
+          <h2 class="section-title">Projects &amp; Concepts</h2>
+          <p class="section-subtitle">
+            Early practical projects, business ideation, and what I am building next.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: HostelFix -->
+          <div class="project-card card">
+            <div class="project-header">
+              <div class="project-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+              </div>
+              <span class="project-type-tag">Startup / Business Idea</span>
+            </div>
+
+            <h3 class="project-title">HostelFix</h3>
+
+            <p class="project-description">
+              A startup and business concept focused on solving common hostel-related problems faced by college students. Designed to streamline grievance reporting, facility maintenance, and daily residential administration.
+            </p>
+
+            <div class="project-highlights">
+              <div class="project-highlight-item">
+                <span class="bullet">•</span>
+                <span>Identified key pain points through peer interviews and surveys</span>
+              </div>
+              <div class="project-highlight-item">
+                <span class="bullet">•</span>
+                <span>Drafted business workflow for complaint tracking and resolution</span>
+              </div>
+            </div>
+
+            <div class="project-tags">
+              <span class="tag">Startup Idea</span>
+              <span class="tag">Problem Solving</span>
+              <span class="tag">Design Thinking</span>
+              <span class="tag">Business Model</span>
+            </div>
+          </div>
+
+          <!-- Project 2: Digital Literacy Portfolio -->
+          <div class="project-card card">
+            <div class="project-header">
+              <div class="project-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <span class="project-type-tag">College Project</span>
+            </div>
+
+            <h3 class="project-title">Digital Literacy Portfolio</h3>
+
+            <p class="project-description">
+              A dedicated academic college project demonstrating digital literacy skills and the practical use of contemporary digital tools, productive workflows, and structured digital documentation.
+            </p>
+
+            <div class="project-highlights">
+              <div class="project-highlight-item">
+                <span class="bullet">•</span>
+                <span>Applied modern productivity tools and collaborative software</span>
+              </div>
+              <div class="project-highlight-item">
+                <span class="bullet">•</span>
+                <span>Created structured presentations and technical summaries</span>
+              </div>
+            </div>
+
+            <div class="project-tags">
+              <span class="tag">Academic Project</span>
+              <span class="tag">Digital Literacy</span>
+              <span class="tag">Productivity Tools</span>
+              <span class="tag">Documentation</span>
+            </div>
+          </div>
+
+          <!-- Project 3: More Coming Soon -->
+          <div class="project-card card coming-soon-card">
+            <div class="project-header">
+              <div class="project-icon-box pulse">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="8" x2="12" y2="12"></line>
+                  <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                </svg>
+              </div>
+              <span class="project-type-tag tag-soon">Under Construction</span>
+            </div>
+
+            <h3 class="project-title">More Projects Coming Soon</h3>
+
+            <p class="project-description">
+              Currently building hands-on projects as I progress through Java programming, Data Structures &amp; Algorithms, and introductory AI/ML implementations. Stay tuned!
+            </p>
+
+            <div class="project-highlights">
+              <div class="project-highlight-item">
+                <span class="bullet">•</span>
+                <span>Java &amp; DSA problem-solving implementations</span>
+              </div>
+              <div class="project-highlight-item">
+                <span class="bullet">•</span>
+                <span>Python &amp; Machine Learning exploration projects</span>
+              </div>
+            </div>
+
+            <div class="project-tags">
+              <span class="tag">Java</span>
+              <span class="tag">DSA</span>
+              <span class="tag">Python</span>
+              <span class="tag">AI / ML</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: Experience / Activities -->
+    <section class="section activities-section" id="activities">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Campus &amp; Co-Curricular</span>
+          <h2 class="section-title">Activities &amp; Exposure</h2>
+          <p class="section-subtitle">
+            Active engagements outside the classroom that foster innovation, teamwork, and entrepreneurial thinking.
+          </p>
+        </div>
+
+        <div class="activities-grid">
+          <!-- Activity 1 -->
+          <div class="activity-card card">
+            <div class="activity-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <div class="activity-content">
+              <h3 class="activity-title">JECRC Incubation Centre (JIC)</h3>
+              <p class="activity-desc">
+                Actively involved in JIC sessions and initiatives, learning about startup incubation ecosystems, mentoring, and early-stage venture development.
+              </p>
+              <span class="activity-category">Incubation Ecosystem</span>
+            </div>
+          </div>
+
+          <!-- Activity 2 -->
+          <div class="activity-card card">
+            <div class="activity-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M16 8l-8 8"></path>
+                <path d="M8 8h8v8"></path>
+              </svg>
+            </div>
+            <div class="activity-content">
+              <h3 class="activity-title">Entrepreneurship Development Program (EDP)</h3>
+              <p class="activity-desc">
+                Participating in EDP workshops to understand business models, market validation, feasibility assessment, and entrepreneurial mindset fundamentals.
+              </p>
+              <span class="activity-category">Entrepreneurship</span>
+            </div>
+          </div>
+
+          <!-- Activity 3 -->
+          <div class="activity-card card">
+            <div class="activity-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <div class="activity-content">
+              <h3 class="activity-title">Hackathon Participation</h3>
+              <p class="activity-desc">
+                Engaging in collaborative collegiate hackathons to brainstorm under time constraints, collaborate in multi-disciplinary teams, and pitch solutions.
+              </p>
+              <span class="activity-category">Competitive Building</span>
+            </div>
+          </div>
+
+          <!-- Activity 4 -->
+          <div class="activity-card card">
+            <div class="activity-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+              </svg>
+            </div>
+            <div class="activity-content">
+              <h3 class="activity-title">Ideation &amp; Design Thinking</h3>
+              <p class="activity-desc">
+                Applying human-centered design thinking methodologies to deconstruct user problems, map customer journeys, and develop innovative concepts.
+              </p>
+              <span class="activity-category">Design Thinking</span>
+            </div>
+          </div>
+
+          <!-- Activity 5 -->
+          <div class="activity-card card">
+            <div class="activity-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+            </div>
+            <div class="activity-content">
+              <h3 class="activity-title">Startup &amp; Business Model Learning</h3>
+              <p class="activity-desc">
+                Studying technology startup case studies, unit economics, value propositions, and scalable digital product architectures.
+              </p>
+              <span class="activity-category">Business Analysis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 7: Interests -->
+    <section class="section interests-section" id="interests">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Passions &amp; Focus</span>
+          <h2 class="section-title">Areas of Interest</h2>
+          <p class="section-subtitle">
+            What drives my curiosity and inspires me to learn and build every day.
+          </p>
+        </div>
+
+        <div class="interests-grid">
+          <div class="interest-card card">
+            <div class="interest-icon">🧠</div>
+            <h3 class="interest-title">Artificial Intelligence &amp; ML</h3>
+            <p class="interest-desc">Fascinated by neural networks, intelligent agents, and how machine learning solves complex automation problems.</p>
+          </div>
+
+          <div class="interest-card card">
+            <div class="interest-icon">💻</div>
+            <h3 class="interest-title">Software Development</h3>
+            <p class="interest-desc">Enjoying the process of converting ideas into functioning, responsive code and useful software applications.</p>
+          </div>
+
+          <div class="interest-card card">
+            <div class="interest-icon">🚀</div>
+            <h3 class="interest-title">Entrepreneurship &amp; Startups</h3>
+            <p class="interest-desc">Passionate about scalable business models, identifying market friction, and creating tech-driven startup ventures.</p>
+          </div>
+
+          <div class="interest-card card">
+            <div class="interest-icon">🌐</div>
+            <h3 class="interest-title">Technology &amp; Innovation</h3>
+            <p class="interest-desc">Constantly following advancements in cloud computing, developer tools, and transformative tech trends.</p>
+          </div>
+
+          <div class="interest-card card">
+            <div class="interest-icon">⚡</div>
+            <h3 class="interest-title">DSA &amp; Problem Solving</h3>
+            <p class="interest-desc">Sharpening mathematical logic, algorithmic complexity, and structured problem-solving skills.</p>
+          </div>
+
+          <div class="interest-card card">
+            <div class="interest-icon">🛠️</div>
+            <h3 class="interest-title">Building Practical Projects</h3>
+            <p class="interest-desc">Believing that the best way to master computer science is by building real, deployable projects from scratch.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 8: Contact -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get in Touch</span>
+          <h2 class="section-title">Contact Me</h2>
+          <p class="section-subtitle">
+            Have a question, feedback, or want to collaborate on a student project? Feel free to reach out!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Info Column -->
+          <div class="contact-info-col">
+            <div class="contact-info-card card">
+              <h3 class="contact-card-heading">Contact Information</h3>
+              <p class="contact-card-sub">
+                I am always open to connecting with fellow students, developers, mentors, and innovators.
+              </p>
+
+              <div class="contact-details">
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                  </div>
+                  <div>
+                    <span class="contact-label">Name</span>
+                    <span class="contact-value">Bhavya Khandelwal</span>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </div>
+                  <div>
+                    <span class="contact-label">Location</span>
+                    <span class="contact-value">Jaipur, Rajasthan, India</span>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </div>
+                  <div>
+                    <span class="contact-label">Email</span>
+                    <a href="mailto:bhavyakhandelwal097@gmail.com" class="contact-value contact-link">
+                      bhavyakhandelwal097@gmail.com
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Social Links (Placeholders with clear indication) -->
+              <div class="social-links-wrapper">
+                <h4 class="socials-heading">Connect with me:</h4>
+                <div class="social-buttons">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub Profile (Placeholder)">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                    <span>GitHub</span>
+                  </a>
+
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn Profile (Placeholder)">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                    <span>LinkedIn</span>
+                  </a>
+                </div>
+                <p class="social-note">* Replace with your own profile links anytime.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Form Column -->
+          <div class="contact-form-col">
+            <div class="card form-card">
+              <h3 class="form-heading">Send a Message</h3>
+              <p class="form-subheading">Fill in the form below and I'll get back to you as soon as possible.</p>
+
+              <form id="contactForm" class="contact-form" novalidate>
+                <div class="form-group">
+                  <label for="name" class="form-label">Your Name <span class="required">*</span></label>
+                  <input type="text" id="name" name="name" class="form-input" placeholder="e.g. Rahul Sharma" required>
+                  <span class="form-error" id="nameError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="email" class="form-label">Your Email <span class="required">*</span></label>
+                  <input type="email" id="email" name="email" class="form-input" placeholder="e.g. rahul@example.com" required>
+                  <span class="form-error" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="message" class="form-label">Message <span class="required">*</span></label>
+                  <textarea id="message" name="message" class="form-textarea" rows="5" placeholder="Write your message here..." required></textarea>
+                  <span class="form-error" id="messageError"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+                  <span>Send Message</span>
+                  <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </button>
+
+                <div class="form-status" id="formStatus" aria-live="polite"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="logo-mark">&lt;BK /&gt;</span>
+          <span class="footer-name">Bhavya Khandelwal</span>
+        </div>
+        <p class="footer-tagline">
+          First-Year CSE Student • Aspiring AI/ML Engineer • JECRC University, Jaipur
+        </p>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; <span id="currentYear"></span> Bhavya Khandelwal. Built with HTML, CSS &amp; JavaScript.
+        </p>
+        <div class="footer-links">
+          <a href="#home">Back to Top ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
